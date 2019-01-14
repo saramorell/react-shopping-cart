@@ -23,7 +23,7 @@ const CartItems = (props) => {
                   </div>
                     <div>
                       <h4>
-                      Total: {props.cartItemsList.reduce((total, item)=>{
+                      Total: ${props.cartItemsList.reduce((total, item)=>{
                         return total + (item.product.priceInCents * item.quantity).toFixed(2)/100
                       },0)}
                       </h4>
